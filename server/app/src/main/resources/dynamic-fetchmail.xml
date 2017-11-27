@@ -17,7 +17,33 @@
   specific language governing permissions and limitations      
   under the License.                                           
  -->
+ 
+<!--
+   This template file can be used as example for James Server configuration
+   DO NOT USE IT AS SUCH AND ADAPT IT TO YOUR NEEDS
+-->
+ 
+<!-- See http://james.apache.org/server/3/config.html for usage -->
 
+<!-- Fetch mail block, fetches mail from message servers and inserts it into the incoming spool -->
+<!-- Warning: It is important to prevent mail from looping by setting the  -->
+<!-- fetched domains in the<servernames>section of the<James>block      -->
+<!-- above. This block is disabled by default.                              -->
+      
+<!-- See http://james.apache.org/server/2.3.0/fetchmail_configuration.html for detailed -->
+<!-- configuration instructions and examples.                                  -->  
+
+<!-- I M P O R T A N T -->
+<!-- Setting markseen="true" will have no effect on many POP3 servers as the POP3 -->
+<!-- protocol does not require the markSeen flag to be supported. When this is the -->
+<!-- case, the only way to ensure that messages are fetched just once is to delete -->
+<!-- fetched messages from the server with leaveonserver="false". -->
+   
+<!-- If you want to perform mailet processing on messages fetched by fetchmail, -->
+<!-- use the HasMailAttribute matcher to detect messages with the MailAttribute -->
+<!-- org.apache.james.fetchmail.taskName. The attribute's value is that of the -->
+<!-- fetch task's name parameter described below. -->
+   
 <dynamic-fetchmail>
 
-</dynamic-fetchmail>
+</dynamic-fetchmail>       
