@@ -31,9 +31,12 @@ import org.apache.james.queue.api.MailQueue;
 import org.apache.james.user.api.UsersRepository;
 import org.apache.james.user.api.UsersRepositoryException;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.mail.MessagingException;
 import javax.mail.Session;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Enumeration;
@@ -78,7 +81,7 @@ import java.util.Properties;
  * delegate, <code>StoreProcessor</code>.
  * </p>
  */
-public class FetchMail implements Runnable, LogEnabled, Configurable {
+public class FetchMail implements Runnable, LogEnabled, Configurable, Serializable {
     /**
      * Key fields for DynamicAccounts.
      */
@@ -383,7 +386,7 @@ public class FetchMail implements Runnable, LogEnabled, Configurable {
      */
     private DNSService dnsServer;
 
-    private Logger logger;
+    private Logger logger = LoggerFactory.getLogger(FetchMail.class);;
 
     private MailQueue queue;
 

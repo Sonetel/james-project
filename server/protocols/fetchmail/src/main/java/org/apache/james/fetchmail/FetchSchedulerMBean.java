@@ -19,6 +19,8 @@
 
 package org.apache.james.fetchmail;
 
+import org.apache.commons.configuration.ConfigurationException;
+
 /**
  * An interface to expose James management functionality through JMX.
  */
@@ -29,4 +31,9 @@ public interface FetchSchedulerMBean {
      */
     boolean isEnabled();
 
+    boolean addFetchMailConfig(String provider, String email, String password) throws ConfigurationException;
+
+    boolean deleteFetchMailConfig(String email) throws ConfigurationException;
+
+    boolean updateFetchMailConfig(String provider, String email, String password) throws ConfigurationException;
 }

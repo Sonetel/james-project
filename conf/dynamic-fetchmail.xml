@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one   
+  or more contributor license agreements.  See the NOTICE file 
+  distributed with this work for additional information        
+  regarding copyright ownership.  The ASF licenses this file   
+  to you under the Apache License, Version 2.0 (the            
+  "License"); you may not use this file except in compliance   
+  with the License.  You may obtain a copy of the License at   
+                                                               
+    http://www.apache.org/licenses/LICENSE-2.0                 
+                                                               
+  Unless required by applicable law or agreed to in writing,   
+  software distributed under the License is distributed on an  
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY       
+  KIND, either express or implied.  See the License for the    
+  specific language governing permissions and limitations      
+  under the License.                                           
+ --><dynamic-fetchmail>
+<mails>
+<fetchDefinition name="b5@localhost.com">
+<defaultdomain>localhost.com</defaultdomain>
+<accounts>
+<account ignorercpt-header="true" password="pass" recipient="a1@localhost.com" user="b5@localhost.com"/>
+</accounts>
+<host>10.254.0.38</host>
+<interval>600000</interval>
+<javaMailProviderName>pop3</javaMailProviderName>
+<javaMailFolderName>INBOX</javaMailFolderName>
+<javaMailProperties>
+<property name="mail.pop3.connectiontimeout" value="180000"/>
+<property name="mail.pop3.timeout" value="180000"/>
+</javaMailProperties>
+<fetchall>false</fetchall>
+<recursesubfolders>false</recursesubfolders>
+<fetched leaveonserver="true" markseen="true"/>
+<remotereceivedheader index="1" leaveonserver="true" markseen="false" reject="true"/>
+<maxmessagesize leaveonserver="true" limit="0" markseen="false" reject="false"/>
+<undeliverable leaveonserver="true" markseen="false"/>
+<recipientnotfound defer="true" leaveonserver="true" markseen="false" reject="true"/>
+<blacklist leaveonserver="true" markseen="false" reject="true"/>
+<userundefined leaveonserver="true" markseen="false" reject="true"/>
+<remoterecipient leaveonserver="true" markseen="false" reject="true"/>
+</fetchDefinition>
+<fetchDefinition name="b6@localhost.com">
+<defaultdomain>localhost.com</defaultdomain>
+<accounts>
+<account ignorercpt-header="true" password="pass" recipient="a1@localhost.com" user="b6@localhost.com"/>
+</accounts>
+<host>10.254.0.38</host>
+<interval>600000</interval>
+<javaMailProviderName>pop3</javaMailProviderName>
+<javaMailFolderName>INBOX</javaMailFolderName>
+<javaMailProperties>
+<property name="mail.pop3.connectiontimeout" value="180000"/>
+<property name="mail.pop3.timeout" value="180000"/>
+</javaMailProperties>
+<fetchall>false</fetchall>
+<recursesubfolders>false</recursesubfolders>
+<fetched leaveonserver="true" markseen="true"/>
+<remotereceivedheader index="1" leaveonserver="true" markseen="false" reject="true"/>
+<maxmessagesize leaveonserver="true" limit="0" markseen="false" reject="false"/>
+<undeliverable leaveonserver="true" markseen="false"/>
+<recipientnotfound defer="true" leaveonserver="true" markseen="false" reject="true"/>
+<blacklist leaveonserver="true" markseen="false" reject="true"/>
+<userundefined leaveonserver="true" markseen="false" reject="true"/>
+<remoterecipient leaveonserver="true" markseen="false" reject="true"/>
+</fetchDefinition>
+<fetchDefinition name="b7@localhost.com">
+<defaultdomain>localhost.com</defaultdomain>
+<accounts>
+<account ignorercpt-header="true" password="pass" recipient="a1@localhost.com" user="b7@localhost.com"/>
+</accounts>
+<host>10.254.0.38</host>
+<interval>600000</interval>
+<javaMailProviderName>pop3</javaMailProviderName>
+<javaMailFolderName>INBOX</javaMailFolderName>
+<javaMailProperties>
+<property name="mail.pop3.connectiontimeout" value="180000"/>
+<property name="mail.pop3.timeout" value="180000"/>
+</javaMailProperties>
+<fetchall>false</fetchall>
+<recursesubfolders>false</recursesubfolders>
+<fetched leaveonserver="true" markseen="true"/>
+<remotereceivedheader index="1" leaveonserver="true" markseen="false" reject="true"/>
+<maxmessagesize leaveonserver="true" limit="0" markseen="false" reject="false"/>
+<undeliverable leaveonserver="true" markseen="false"/>
+<recipientnotfound defer="true" leaveonserver="true" markseen="false" reject="true"/>
+<blacklist leaveonserver="true" markseen="false" reject="true"/>
+<userundefined leaveonserver="true" markseen="false" reject="true"/>
+<remoterecipient leaveonserver="true" markseen="false" reject="true"/>
+</fetchDefinition>
+<fetchDefinition name="b8@localhost.com">
+<defaultdomain>localhost.com</defaultdomain>
+<accounts>
+<account ignorercpt-header="true" password="pass" recipient="a1@localhost.com" user="b8@localhost.com"/>
+</accounts>
+<host>10.254.0.38</host>
+<interval>600000</interval>
+<javaMailProviderName>pop3</javaMailProviderName>
+<javaMailFolderName>INBOX</javaMailFolderName>
+<javaMailProperties>
+<property name="mail.pop3.connectiontimeout" value="180000"/>
+<property name="mail.pop3.timeout" value="180000"/>
+</javaMailProperties>
+<fetchall>false</fetchall>
+<recursesubfolders>false</recursesubfolders>
+<fetched leaveonserver="true" markseen="true"/>
+<remotereceivedheader index="1" leaveonserver="true" markseen="false" reject="true"/>
+<maxmessagesize leaveonserver="true" limit="0" markseen="false" reject="false"/>
+<undeliverable leaveonserver="true" markseen="false"/>
+<recipientnotfound defer="true" leaveonserver="true" markseen="false" reject="true"/>
+<blacklist leaveonserver="true" markseen="false" reject="true"/>
+<userundefined leaveonserver="true" markseen="false" reject="true"/>
+<remoterecipient leaveonserver="true" markseen="false" reject="true"/>
+</fetchDefinition>
+</mails>
+</dynamic-fetchmail>
