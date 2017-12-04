@@ -53,7 +53,7 @@ import javax.inject.Inject;
  */
 public class FetchScheduler implements FetchSchedulerMBean, LogEnabled, Configurable {
 
-    public static final String DYNAMIC_FETCHMAIL = "dynamic-fetchmail";
+    public static final String DYNAMIC_FETCHMAIL = "dynamic-fetchmail.xml";
     public static final String FETCH_DEFINITION = "fetchDefinition";
     private static final String MAILS = "mails";
     /**
@@ -159,7 +159,7 @@ public class FetchScheduler implements FetchSchedulerMBean, LogEnabled, Configur
 
             initProviders();
 
-            dynamicFetchXmlFile = new File(".." + File.separator + "conf" + File.separator + "dynamic-fetchmail.xml");
+            dynamicFetchXmlFile = new File(".." + File.separator + "conf" + File.separator + DYNAMIC_FETCHMAIL);
             dynamicFetchMails = new XMLConfiguration(dynamicFetchXmlFile);
             try {
                 List<HierarchicalConfiguration> dynamicFetchConfs = dynamicFetchMails.configurationAt(MAILS).configurationsAt(FETCH_DEFINITION);
@@ -288,8 +288,7 @@ public class FetchScheduler implements FetchSchedulerMBean, LogEnabled, Configur
     @Override
     public boolean updateFetchMailConfig(String provider, String email, String password) throws ConfigurationException {
         if(deleteFetchMail(email)){
-            addFetchMailConfig(provider, email, password);
-            return true;
+            return addFetchMailConfig(provider, email, password);
         }
         return false;
     }
