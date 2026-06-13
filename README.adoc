@@ -1,3 +1,7 @@
+> **🗄️ ARCHIVED — June 2026.** This repository was archived as part of Sonetel's org-wide repository governance review (June 2026). It is now **read-only and unmaintained**. Decision record: Sonetel/tech-debt#11.
+
+---
+
 Apache James Project
 ====================
 
